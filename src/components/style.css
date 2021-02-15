@@ -43,14 +43,14 @@ body {
   left: 220px;
   bottom: 350px;
   border-radius: 39px 31px 16px 25px;
-  background-image: url("../flappy-bird-game/assets/flappy-bird.png");
+  background-image: url("../assets/flappy-bird.png");
 }
 
 .obstacle {
   position: absolute;
   width: 60px;
   height: 300px;
-  background-image: url("../flappy-bird-game/assets/flappybird-pipe.png");
+  background-image: url("../assets/flappybird-pipe.png");
 }
 
 .topObstacle {
@@ -58,7 +58,7 @@ body {
   transform: rotate(180deg);
   width: 60px;
   height: 300px;
-  background-image: url("../flappy-bird-game/assets/flappybird-pipe-top.png");
+  background-image: url("../assets/flappybird-pipe-top.png");
 }
 
 .sky {
@@ -66,7 +66,7 @@ body {
   width: 500px;
   height: 580px;
   filter: saturate(1.3) contrast(120%);
-  background-image: url("../flappy-bird-game/assets/fb-game-background.png");
+  background-image: url("../assets/fb-game-background.png");
 }
 
 .ground {
@@ -75,7 +75,7 @@ body {
   height: 150px;
   top: 580px;
   z-index: 1;
-  background-image: url("../flappy-bird-game/assets/bottom-background.png");
+  background-image: url("../assets/bottom-background.png");
 }
 
 @keyframes slideright {
@@ -107,7 +107,7 @@ body {
   position: absolute;
   top: 580px;
   height: 150px;
-  background-image: url("../flappy-bird-game/assets/bottom-background.png");
+  background-image: url("../assets/bottom-background.png");
   background-repeat: repeat-x;
   animation: slideright 100s infinite linear;
   -webkit-animation: slideright 100s infinite linear;
