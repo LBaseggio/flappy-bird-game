@@ -1,0 +1,116 @@
+body {
+  display: flex;
+}
+
+.game-container {
+  position: absolute;
+  width: 500px;
+  height: 730px;
+  left: 80px;
+}
+
+.border-top {
+  position: absolute;
+  width: 652px;
+  height: 50px;
+  top: -50px;
+  left: -72px;
+  z-index: +2;
+  background-color: #fff;
+}
+
+.border-left {
+  position: absolute;
+  width: 80px;
+  height: 790px;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.border-right {
+  position: absolute;
+  width: 80px;
+  height: 790px;
+  left: 580px;
+  z-index: +2;
+  background-color: #fff;
+}
+
+.bird {
+  position: absolute;
+  width: 50px;
+  height: 35px;
+  left: 220px;
+  bottom: 350px;
+  border-radius: 39px 31px 16px 25px;
+  background-image: url("../flappy-bird-game/assets/flappy-bird.png");
+}
+
+.obstacle {
+  position: absolute;
+  width: 60px;
+  height: 300px;
+  background-image: url("../flappy-bird-game/assets/flappybird-pipe.png");
+}
+
+.topObstacle {
+  position: absolute;
+  transform: rotate(180deg);
+  width: 60px;
+  height: 300px;
+  background-image: url("../flappy-bird-game/assets/flappybird-pipe-top.png");
+}
+
+.sky {
+  position: absolute;
+  width: 500px;
+  height: 580px;
+  filter: saturate(1.3) contrast(120%);
+  background-image: url("../flappy-bird-game/assets/fb-game-background.png");
+}
+
+.ground {
+  position: absolute;
+  width: 500px;
+  height: 150px;
+  top: 580px;
+  z-index: 1;
+  background-image: url("../flappy-bird-game/assets/bottom-background.png");
+}
+
+@keyframes slideright {
+  from {
+    background-position: 10000%;
+  }
+  to {
+    background-position: 0%;
+  }
+}
+
+@-webkit-keyframes slideright {
+  from {
+    background-position: 10000%;
+  }
+  to {
+    background-position: 0%;
+  }
+}
+
+.ground-container {
+  height: 150px;
+  width: 580px;
+  left: 80px;
+  position: absolute;
+}
+
+.ground-moving {
+  position: absolute;
+  top: 580px;
+  height: 150px;
+  background-image: url("../flappy-bird-game/assets/bottom-background.png");
+  background-repeat: repeat-x;
+  animation: slideright 100s infinite linear;
+  -webkit-animation: slideright 100s infinite linear;
+  width: 100%;
+  z-index: +1;
+}
